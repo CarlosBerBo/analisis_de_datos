@@ -79,7 +79,7 @@ def menu(direccion):
             for n in range(top):
                 print('{}. {}: ${:,}'.format(n + 1, rutas_completas[n][0], rutas_completas[n][1]))
                 valor += rutas_completas[n][1]
-            valor_total = totales(direccion)
+            valor_total = totales(datos)
             porcentaje = valor / valor_total * 100
             print('El valor total de las {} rutas equivale a ${:,} que representa el {}% del total.'.format(top,valor,porcentaje))
             interruptor = continuar2()
